@@ -135,7 +135,6 @@
 </template>
 <style scoped lang="scss">
 .background {
-  background: black;
   height: 300px;
   width: 300px;
   margin: auto;
@@ -146,11 +145,6 @@
   }
 }
 
-.lines {
-
-}
-
-
 #circle_outside {
   background: #171749;
   width: 80%;
@@ -158,9 +152,9 @@
   left: 10%;
   top: 10%;
   border-radius: 50%;
-  animation: fade-in-outer-circle forwards ease-out 0.5s,
-  outside-rotate forwards ease-out 0.5s,
-  outside-box-shadow 5s forwards ease-in-out alternate infinite 0.5s;
+  animation: fade-in-outer-circle forwards ease-out 0.6s,
+  outside-rotate forwards ease-out 0.6s,
+  outside-box-shadow 3s forwards linear alternate infinite 0.2s;
 
   > div {
     position: absolute;
@@ -170,12 +164,12 @@
 #canvas {
   width: 100%;
   aspect-ratio: 1;
-  animation: outside-rotate-reverse forwards ease-out 0.5s;
+  animation: outside-rotate-reverse forwards ease-out 0.6s;
 }
 
 #canvas-lines {
   opacity: 0;
-  animation: fade-in-lines 0.8s ease-out forwards 0.8s;
+  animation: fade-in-lines 0.9s ease-out forwards 0.8s;
 
   .fill {
     fill: #171749;
@@ -206,7 +200,7 @@
 }
 
 #canvas-text {
-  animation: outside-rotate-reverse forwards ease-out 0.5s;
+  animation: outside-rotate-reverse forwards ease-out 0.6s;
   position: absolute;
   width: 100%;
   top: 0;
@@ -214,12 +208,12 @@
 
   .sei {
     opacity: 0;
-    animation: text-appear 0.5s forwards 0.25s;
+    animation: text-appear 0.7s forwards 0.25s;
   }
 
   .sai {
     opacity: 0;
-    animation: text-appear 0.5s forwards 0.35s;
+    animation: text-appear 0.7s forwards 0.35s;
   }
 
   .sai11, .sai21 {
@@ -227,11 +221,11 @@
   }
 
   .sai12, .sai22, .sai3 {
-    animation-delay: 0.45s;
+    animation-delay: 0.48s;
   }
 
   .sai13, .sai23 {
-    animation-delay: 0.55s;
+    animation-delay: 0.61s;
   }
 
   //.t22, .toki, .wa {
@@ -241,7 +235,7 @@
   .tokiwa22 {
     opacity: 0;
     transform-origin: 58% 48%;
-    animation: slide-in-22tokiwa 0.3s forwards ease-out 0.8s;
+    animation: slide-in-22tokiwa 0.5s forwards ease-out 0.7s;
   }
 }
 
