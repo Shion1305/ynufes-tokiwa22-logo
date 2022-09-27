@@ -1,16 +1,19 @@
 <template>
-  <LogoAnimation msg="Welcome to Your Vue.js App"/>
-  <SvgTest/>
+  <div id="wrapper">
+    <div id="loader">
+      <LogoAnimation id="logo-animation"/>
+      <div id="logo-text">横浜国立大学<br>2022年常盤祭</div>
+      <div id="logo-date">10/28,29,30</div>
+    </div>
+  </div>
 </template>
 
 <script>
 import LogoAnimation from './components/LogoAnimation.vue'
-import SvgTest from "@/components/SvgTest";
 
 export default {
   name: 'App',
   components: {
-    SvgTest,
     LogoAnimation
   }
 }
@@ -19,14 +22,27 @@ export default {
 <style>
 body {
   margin: 0;
-  background: black;
+  height: 100%;
+  background: #051228;
+  color: white;
+}
+
+#logo-animation {
+  width: min(65vw, 350px);
+}
+
+#logo-date {
+  font-size: 1.5em;
+}
+
+#logo-text {
+  font-size: min(8vw, 2em);
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Klee One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 </style>
