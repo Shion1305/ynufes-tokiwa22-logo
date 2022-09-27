@@ -154,7 +154,7 @@
   border-radius: 50%;
   animation: fade-in-outer-circle forwards ease-out 0.6s,
   outside-rotate forwards ease-out 0.6s,
-  outside-box-shadow 3s forwards linear alternate infinite 0.2s;
+  outside-box-shadow 3s forwards ease-in-out 0.2s;
 
   > div {
     position: absolute;
@@ -371,10 +371,13 @@
 
 @keyframes outside-box-shadow {
   0% {
-    box-shadow: 0 0 10px #fff0;
+    box-shadow: 0 0 0 #fff0;
+  }
+  40% {
+    box-shadow: 0 0 20px #fffc;
   }
   100% {
-    box-shadow: 0 0 30px #fffc;
+    box-shadow: 0 0 10px #fffa;
   }
 }
 
