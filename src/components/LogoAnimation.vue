@@ -152,9 +152,9 @@
   left: 10%;
   top: 10%;
   border-radius: 50%;
-  animation: fade-in-outer-circle forwards ease-out 0.6s,
-  outside-rotate forwards ease-out 0.6s,
-  outside-box-shadow 3s forwards ease-in-out 0.2s;
+  animation: .6s ease-out forwards fade-in-outer-circle,
+  0.6s ease-out forwards outside-rotate,
+  3s ease-in-out 0.2s forwards outside-box-shadow;
 
   > div {
     position: absolute;
@@ -164,12 +164,12 @@
 #canvas {
   width: 100%;
   aspect-ratio: 1;
-  animation: outside-rotate-reverse forwards ease-out 0.6s;
+  animation: .6s ease-out forwards outside-rotate-reverse;
 }
 
 #canvas-lines {
   opacity: 0;
-  animation: fade-in-lines 0.9s ease-out forwards 0.8s;
+  animation: .8s ease-out .9s forwards fade-in-lines;
 
   .fill {
     fill: #171749;
@@ -200,7 +200,7 @@
 }
 
 #canvas-text {
-  animation: outside-rotate-reverse forwards ease-out 0.6s;
+  animation: .6s ease-out forwards outside-rotate-reverse;
   position: absolute;
   width: 100%;
   top: 0;
@@ -208,12 +208,12 @@
 
   .sei {
     opacity: 0;
-    animation: text-appear 0.7s forwards 0.25s;
+    animation: 0.7s 0.25s forwards text-appear;
   }
 
   .sai {
     opacity: 0;
-    animation: text-appear 0.7s forwards 0.35s;
+    animation: 0.7s 0.35s forwards text-appear;
   }
 
   .sai11, .sai21 {
@@ -228,14 +228,10 @@
     animation-delay: 0.61s;
   }
 
-  //.t22, .toki, .wa {
-  //  opacity: 0;
-  //  animation: slide-in-22tokiwa 0.2s forwards 0.95s;
-  //}
   .tokiwa22 {
     opacity: 0;
     transform-origin: 58% 48%;
-    animation: slide-in-22tokiwa 0.5s forwards ease-out 0.7s;
+    animation: 0.5s ease-out 0.7s forwards slide-in-22tokiwa;
   }
 }
 
@@ -265,7 +261,7 @@
 .cls-1 {
   fill: white;
   opacity: 0;
-  animation: slide-stars-and-scars 0.5s forwards ease-out 0.65s;
+  animation: 0.5s ease-out 0.65s forwards slide-stars-and-scars;
 }
 
 .stroke {
@@ -297,8 +293,8 @@
   height: calc(100% * .86867);
   top: calc(100% * .03171);
   border-radius: 50%;
-  animation: slide-inner-circle forwards ease-out 0.5s,
-  inner-star-rotate forwards ease-out 0.5s;
+  animation: 0.5s ease-out forwards slide-inner-circle,
+  0.5s ease-out forwards inner-star-rotate;
   //outside-rotate-reverse forwards ease-out 0.5s;
 
   .shadow-circle {
@@ -322,7 +318,7 @@
     > g > path {
       opacity: 0;
       fill: #171749;
-      animation: fade-in-stars-back 0.8s forwards ease-out 0.8s;
+      animation: 0.8s ease-out 0.8s forwards fade-in-stars-back;
     }
   }
 }
