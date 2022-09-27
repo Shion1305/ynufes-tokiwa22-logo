@@ -137,7 +137,6 @@
 .background {
   aspect-ratio: 1;
   width: 100%;
-  margin: auto;
   position: relative;
 
   > div {
