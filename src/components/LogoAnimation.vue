@@ -135,8 +135,8 @@
 </template>
 <style scoped lang="scss">
 .background {
-  height: 300px;
-  width: 300px;
+  aspect-ratio: 1;
+  width: 100%;
   margin: auto;
   position: relative;
 
