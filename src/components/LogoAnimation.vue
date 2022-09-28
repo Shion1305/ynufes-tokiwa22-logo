@@ -294,7 +294,10 @@
   border-radius: 50%;
   animation: 0.5s ease-out forwards slide-inner-circle,
   0.5s ease-out forwards inner-star-rotate;
-  //outside-rotate-reverse forwards ease-out 0.5s;
+
+  > * {
+    transform: rotate(-6deg);
+  }
 
   .shadow-circle {
     position: absolute;
